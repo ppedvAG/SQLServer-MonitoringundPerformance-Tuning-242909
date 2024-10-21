@@ -6,7 +6,7 @@ FROM         Customers INNER JOIN
                    Employees ON Orders.EmployeeID = Employees.EmployeeID INNER JOIN
                    [Order Details] ON Orders.OrderID = [Order Details].OrderID INNER JOIN
                    Products ON [Order Details].ProductID = Products.ProductID
-
+GO
 
 insert into KU
 select * from KU
